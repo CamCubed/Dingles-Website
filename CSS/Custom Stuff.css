@@ -1,5 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
+
+
+body {
+	background-color: #E3DED3;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .header-area {
 	color: white;
 	background-image: url("../Images/Dingo header.jpg");
@@ -14,7 +26,7 @@
 	padding: 10px;
 	float: right;
 	padding: 20px;
-	margin-top: -20px;
+	margin-top: 80px;
 }
 .dingo-head {
 	color: white;
@@ -22,8 +34,15 @@
 	height: 500px;
 	 background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; 	
+  background-size: cover; 
+	background-attachment: fixed;
 }
-.-radius {
-	border-radius: 0px;
+.noradius {
+	border-radius: 0px !important;
+}
+.spacer {
+	padding: 50px;
+	background-color:#383D46;
+	color:#000000;
+	margin-top:-35px;
 }

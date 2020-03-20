@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     
 	<title>Dingo Tech</title>
+	<!--Animate CSS-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Custom Styles -->
 	
 	<link href="CSS/Custom Stuff.css" type="text/css" rel="stylesheet">
@@ -21,9 +23,10 @@
 </head>
 <body>
 	
-	<head>
-	    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-		<a class="navbar-brand text-light">Dingo Tech</a>
+	<header>
+	   	<div id="navbar" style="z-index:10">
+		<nav class="navbar navbar-expand-sm navbar-dark" style="background-color:#383D46">
+		<a class="animated zoomInLeft navbar-brand text-light">Dingo Tech</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar"><span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="collapseNavbar">
@@ -32,7 +35,7 @@
 		<a class="nav-link" href="#">Home</a>
 		</li>
 		<li class="nav-item">
-		<a class="nav-link" href="#">Survices</a>
+		<a class="nav-link" href="#">Services</a>
 		</li>
 		<li class="nav-item">
 		<a class="nav-link" href="#">Team</a>
@@ -43,10 +46,42 @@
 
 		</ul>
 	</div>
+			</div>
+			<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 		</nav>
 		
-		<div class="jumbotron dingo-head -radius" style="">
-		<h1 class="header-text">Welcome To Dingo Tech</h1></div>
-	</head>
-</body>
+		<div class="jumbotron dingo-head noradius" style="radius:0px;">
+		<h1 class="animated fadeInDown header-text">Welcome To Dingo Tech</h1></div>
+	</header>
+	<div class="container">
+	 <div class="row text-center">
+    <div class="col-sm-4">
+      <h3>Diamonds</h3>
+      <p>Expencive chuncks of carbon</p>
+		<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/starg-ex-high-res-stock-photography-872545574-1531772321.jpg" width="100">
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+	</div>
+	
+	</body>
 </html>
