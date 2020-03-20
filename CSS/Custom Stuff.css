@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+.header-area {
+	color: white;
+	background-image: url("../Images/Dingo header.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%, 200px;
+	background-attachment: fixed;
+	padding: 300px;
+
+}
+.header-text {
+	background-color: #FE6666;
+	padding: 10px;
+	float: right;
+	padding: 20px;
+	margin-top: -20px;
+}
+.dingo-head {
+	color: white;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/Dingo header.jpg");
+	height: 500px;
+	 background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 	
+}
+.-radius {
+	border-radius: 0px;
+}
